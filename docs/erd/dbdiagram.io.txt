@@ -1,0 +1,39 @@
+Table users {
+  id integer [primary key]
+  username varchar [unique]
+  password varchar
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now() on update`]
+
+  Note: 'User table stores basic user information including username and password.'
+}
+
+Table books {
+  id integer [primary key]
+  title varchar
+  author_name varchar
+  publisher_name varchar
+  user_id integer
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now() on update`]
+
+  Note: 'Book table stores details about books, linked to users.'
+}
+
+Table logs {
+  id integer [primary key]
+  action varchar
+  model varchar
+  record_id integer
+  old_data json [note: 'Previous data of the record']
+  new_data json [note: 'Updated data of the record']
+  user_id integer
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now() on update`]
+
+  Note: 'Log table stores actions and changes performed by users.'
+}
+
+Ref: books.user_id > users.id // many-to-one
+
+Ref: logs.user_id > users.id // many-to-one

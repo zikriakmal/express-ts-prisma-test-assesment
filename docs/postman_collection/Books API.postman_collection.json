@@ -1,0 +1,714 @@
+{
+	"info": {
+		"_postman_id": "0811bc58-7bf0-4a7d-bc16-08407d55d472",
+		"name": "Books API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34331420"
+	},
+	"item": [
+		{
+			"name": "V1",
+			"item": [
+				{
+					"name": "Books",
+					"item": [
+						{
+							"name": "Get All Book",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books?page=1&pageSize=20",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Get All Book",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/books?page=1&pageSize=20",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "1"
+												},
+												{
+													"key": "pageSize",
+													"value": "20"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "4061"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"fdd-KnhZptaa0/CO0kLSipLXbQD5izQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:35:27 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully get all book\",\n    \"data\": {\n        \"records\": [\n            {\n                \"id\": 23,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:32.987Z\",\n                \"updatedAt\": \"2024-12-15T13:45:32.987Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 24,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:33.558Z\",\n                \"updatedAt\": \"2024-12-15T13:45:33.558Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 25,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:34.042Z\",\n                \"updatedAt\": \"2024-12-15T13:45:34.042Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 26,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:34.520Z\",\n                \"updatedAt\": \"2024-12-15T13:45:34.520Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 27,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:34.979Z\",\n                \"updatedAt\": \"2024-12-15T13:45:34.979Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 28,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:35.457Z\",\n                \"updatedAt\": \"2024-12-15T13:45:35.457Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 29,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T13:45:36.152Z\",\n                \"updatedAt\": \"2024-12-15T13:45:36.152Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 30,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:00:47.278Z\",\n                \"updatedAt\": \"2024-12-15T14:00:47.278Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 31,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:05:57.844Z\",\n                \"updatedAt\": \"2024-12-15T14:05:57.844Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 32,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:05:58.896Z\",\n                \"updatedAt\": \"2024-12-15T14:05:58.896Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 33,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:00.457Z\",\n                \"updatedAt\": \"2024-12-15T14:06:00.457Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 34,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:05.414Z\",\n                \"updatedAt\": \"2024-12-15T14:06:05.414Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 35,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:06.112Z\",\n                \"updatedAt\": \"2024-12-15T14:06:06.112Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 36,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:06.465Z\",\n                \"updatedAt\": \"2024-12-15T14:06:06.465Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 37,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:06.982Z\",\n                \"updatedAt\": \"2024-12-15T14:06:06.982Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 38,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:07.403Z\",\n                \"updatedAt\": \"2024-12-15T14:06:07.403Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 39,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:08.019Z\",\n                \"updatedAt\": \"2024-12-15T14:06:08.019Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            },\n            {\n                \"id\": 40,\n                \"title\": \"test title\",\n                \"authorName\": \"author name\",\n                \"publisherName\": \"publisher name\",\n                \"userId\": 3,\n                \"createdAt\": \"2024-12-15T14:06:08.486Z\",\n                \"updatedAt\": \"2024-12-15T14:06:08.486Z\",\n                \"user\": {\n                    \"id\": 3,\n                    \"username\": \"john_doe\"\n                }\n            }\n        ],\n        \"meta\": {\n            \"total\": 18,\n            \"page\": 1,\n            \"pageSize\": 20,\n            \"totalPages\": 1\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Get Book By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/books/:id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "21"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "306"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"132-P9ijYSF1aJMzvjbsfagDB3GQQTQ\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:34:49 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully get book by id\",\n    \"data\": {\n        \"id\": 21,\n        \"title\": \"test title update\",\n        \"authorName\": \"author name update\",\n        \"publisherName\": \"publisher name update\",\n        \"userId\": 3,\n        \"createdAt\": \"2024-12-15T13:45:29.735Z\",\n        \"updatedAt\": \"2024-12-15T14:21:47.568Z\",\n        \"user\": {\n            \"id\": 3,\n            \"username\": \"john_doe\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Create Book",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"test title\",\n    \"authorName\": \"author name\",\n    \"publisherName\": \"publisher name\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"title\": \"test title\",\n    \"authorName\": \"author name\",\n    \"publisherName\": \"publisher name\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/v1/books",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "282"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"11a-87KiBuNDE0VBL9d6ZQHExBp1XxY\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:06:08 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully create book\",\n    \"data\": {\n        \"id\": 40,\n        \"title\": \"test title\",\n        \"authorName\": \"author name\",\n        \"publisherName\": \"publisher name\",\n        \"userId\": 3,\n        \"createdAt\": \"2024-12-15T14:06:08.486Z\",\n        \"updatedAt\": \"2024-12-15T14:06:08.486Z\",\n        \"user\": {\n            \"id\": 3,\n            \"username\": \"john_doe\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Book By id",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"test title update\",\n    \"authorName\": \"author name update 3\",\n    \"publisherName\": \"publisher name update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "{{base_url}}/v1/books",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"title\": \"test title update\",\n    \"authorName\": \"author name update\",\n    \"publisherName\": \"publisher name update\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/v1/books/:id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "21"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "303"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12f-GIa/oDMfUHEFhLpHAvFs3zUASMk\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:34:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully update book\",\n    \"data\": {\n        \"id\": 21,\n        \"title\": \"test title update\",\n        \"authorName\": \"author name update\",\n        \"publisherName\": \"publisher name update\",\n        \"userId\": 3,\n        \"createdAt\": \"2024-12-15T13:45:29.735Z\",\n        \"updatedAt\": \"2024-12-15T14:34:57.729Z\",\n        \"user\": {\n            \"id\": 3,\n            \"username\": \"john_doe\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Delete Book By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1/books/:id",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"books",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Delete Book By Id",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{base_url}}/v1/books/:id",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"books",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "21"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "303"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"12f-OWtJxdIo3nId0HuX3aQI2BrFWis\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:35:18 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully delete book\",\n    \"data\": {\n        \"id\": 21,\n        \"title\": \"test title update\",\n        \"authorName\": \"author name update\",\n        \"publisherName\": \"publisher name update\",\n        \"userId\": 3,\n        \"createdAt\": \"2024-12-15T13:45:29.735Z\",\n        \"updatedAt\": \"2024-12-15T14:34:57.729Z\",\n        \"user\": {\n            \"id\": 3,\n            \"username\": \"john_doe\"\n        }\n    }\n}"
+								}
+							]
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "{{access_token}}",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Login successful\", function () {",
+											"    pm.response.to.have.status(200); // Check if status is 200",
+											"    var jsonData = pm.response.json();",
+											"    pm.environment.set(\"access_token\", jsonData.data.accessToken); // Adjust the key according to your response structure",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" :\"john_doe\",\n    \"password\" : \"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/v1/auth/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "New Request",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"username\" :\"john_doe\",\n    \"password\" : \"password\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{base_url}}/v1/auth/login",
+											"host": [
+												"{{base_url}}"
+											],
+											"path": [
+												"v1",
+												"auth",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "244"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"f4-m7i0JA9wwzOXw3RGRc76mvOtzHI\""
+										},
+										{
+											"key": "Date",
+											"value": "Sun, 15 Dec 2024 14:05:33 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=5"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Successfully Login\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXNlcm5hbWUiOiJqb2huX2RvZSIsImlhdCI6MTczNDI3MTUzMywiZXhwIjoxNzM0Mjc1MTMzfQ.PAvzanuIcdfnDDAhMdUv8vyONE7ixojUFG8Nx0mEmTs\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Root",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/v1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"v1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/v1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"v1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "19"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13-dFzPA26IpS1UvYY7HNuvQ8i9yAw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2024 11:20:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Books Api Ver-1.0.0"
+						}
+					]
+				}
+			]
+		}
+	]
+}
